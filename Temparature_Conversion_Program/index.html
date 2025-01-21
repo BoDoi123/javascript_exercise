@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Font CDN -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>JavaScript - Temperature Conversion Program</title>
+    </head>
+    <body>
+        <form class="application">
+            <h1>Temperature conversion:</h1>
+
+            <div class="input-group">
+                <input type="number" name="" id="input_number" />
+
+                <label for="toFahrenheit" class="checkbox">
+                    <input type="radio" name="conversion" id="toFahrenheit" />
+                    Celsius
+                    <i class="fa-solid fa-arrow-right"></i> Fahrenheit
+                </label>
+
+                <label for="toCelsius" class="checkbox">
+                    <input type="radio" name="conversion" id="toCelsius" />
+                    Fahrenheit
+                    <i class="fa-solid fa-arrow-right"></i> Celsius
+                </label>
+
+                <input type="submit" value="submit" class="submit" />
+            </div>
+
+            <p id="result-message"></p>
+        </form>
+
+        <!-- File JS -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>
