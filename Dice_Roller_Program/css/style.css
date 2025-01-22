@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    font-family: sans-serif;
+}
+
+/* Title */
+h1 {
+    font-size: 50px;
+}
+
+/* Form */
+#form {
+    font-size: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+#label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+    word-spacing: 3px;
+    font-weight: bold;
+}
+
+#input_number {
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+
+    max-width: 130px;
+
+    border-radius: 3px;
+    border: 2px solid rgba(0, 0, 0, 0.299);
+}
+
+#submit {
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+
+    padding: 8px 12px;
+
+    border-radius: 5px;
+    border: 0;
+
+    background-color: rgb(59, 118, 255);
+
+    cursor: pointer;
+}
+
+#submit:active {
+    transform: scale(0.98);
+}
+
+#submit:hover {
+    opacity: 0.9;
+}
+
+/* Container result */
+.container_result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#dices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#dices img {
+    width: 150px;
+}
