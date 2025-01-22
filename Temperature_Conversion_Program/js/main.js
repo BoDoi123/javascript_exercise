@@ -10,6 +10,9 @@ const result = document.querySelector("#result-message");
 function convert(number) {
     if (number === "") {
         result.textContent = "Input your number";
+        setTimeout(() => {
+            result.textContent = "";
+        }, 5000);
         return;
     }
 
@@ -19,6 +22,9 @@ function convert(number) {
         result.textContent = ((number - 32) * (5 / 9)).toFixed(1) + "°C";
     } else {
         result.textContent = "Select a unit";
+        setTimeout(() => {
+            result.textContent = "";
+        }, 5000);
     }
 }
 
