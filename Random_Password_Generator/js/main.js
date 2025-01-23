@@ -26,7 +26,7 @@ function generatePassword(
         return "(At least 1 set of character needs  to be selected)";
     }
 
-    while (password.length <= 10) {
+    while (password.length <= length) {
         const randomIndex = Math.floor(Math.random() * allowedChars.length);
 
         password += allowedChars[randomIndex];
