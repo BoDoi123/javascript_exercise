@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+
+    background-image: url(../img/stephan-widua-iPOZf3tQfHA-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+#clock {
+    color: #fff;
+    font-family: monospace;
+    font-size: 6.5rem;
+    font-weight: bold;
+
+    text-align: center;
+
+    backdrop-filter: blur(5px);
+    background-color: hlsa(0, 0%, 100%, 0.1);
+    width: 100%;
+}
