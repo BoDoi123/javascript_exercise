@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    position: relative;
+}
+
+.slide {
+    display: none;
+}
+
+.show_slide {
+    display: block;
+    animation: showFrame 2.5s;
+}
+
+@keyframes showFrame {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+button {
+    font-size: 1.5rem;
+    color: #fff;
+
+    padding: 15px 14px;
+
+    background-color: black;
+    opacity: 0.5;
+
+    border: none;
+    border-radius: 2px;
+
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.next {
+    right: 0;
+}
