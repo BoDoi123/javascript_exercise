@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #487a7a;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+/* Button */
+button {
+    border-radius: 15px;
+    border: none;
+
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.9;
+}
+
+.btn {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    margin-top: 30px;
+    padding: 20px;
+
+    background-color: #000000c0;
+    color: #fff;
+}
+
+/* Message */
+#msg_box {
+    text-align: center;
+}
+
+#msg {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#new_game_btn {
+    margin: 0;
+}
+
+/* Board Game */
+#container {
+    text-align: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+
+    background-color: #fdfebe;
+
+    font-size: 5rem;
+    color: #aa383b;
+}
