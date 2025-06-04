@@ -136,7 +136,6 @@ const app = {
 		const _this = this;
 		const cdWidth = cd.offsetWidth;
 		const listSong = $$(".song");
-		console.log(listSong);
 
 		// Xử lý CD quay / dừng
 		const cdThumbAnimate = cdThumb.animate(
@@ -246,9 +245,6 @@ const app = {
 				_this.randomSongs = [];
 				_this.randomIndexes = [];
 			}
-
-			console.log(_this.randomSongs);
-			console.log(_this.randomIndexes);
 		});
 
 		// Next / repeat khi chạy xong bài hát
@@ -271,6 +267,10 @@ const app = {
 		// Khi active bài hát
 		listSong.forEach((song, index) => {
 			song.addEventListener("click", () => {
+				if (song.classList.contains("active")) {
+					return;
+				}
+
 				progress.value = 0;
 				$(".song.active").classList.remove("active");
 				song.classList.add("active");
