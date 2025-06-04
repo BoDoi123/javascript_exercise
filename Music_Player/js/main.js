@@ -293,6 +293,7 @@ const app = {
 			}
 
 			listSong[_this.currentIndex].classList.add("active");
+			_this.scrollToActiveSong();
 		});
 	},
 
@@ -332,6 +333,14 @@ const app = {
 		}
 
 		return [array, array1];
+	},
+	scrollToActiveSong() {
+		setTimeout(() => {
+			$(".song.active").scrollIntoView({
+				behavior: "smooth",
+				block: "end",
+			});
+		}, 200);
 	},
 	changeSong(index) {
 		this.currentIndex = index;
